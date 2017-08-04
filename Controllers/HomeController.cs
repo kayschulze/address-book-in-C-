@@ -46,6 +46,12 @@ namespace AddressBook.Contollers
             return View(selectedContact);
         }
 
+        [HttpGet("/contacts/clear/safeguardall")]
+        public ActionResult SafeGuardAllContacts() {
+          return View();
+        }
+
+
         [HttpGet("/contacts/clear")]
         public ActionResult ClearContacts()
         {
