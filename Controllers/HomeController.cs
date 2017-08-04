@@ -38,5 +38,12 @@ namespace AddressBook.Contollers
             Contact newContact = new Contact(newName, newPhone, newAddress);
             return View(newContact);
         }
+
+        [HttpGet("/contact/{id}")]
+        public ActionResult ContactDetails(int id)
+        {
+            Contact selectedContact = Contact.Find(id);
+            return View(selectedContact);
+        }
     }
 }
