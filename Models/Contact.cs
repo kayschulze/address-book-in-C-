@@ -15,6 +15,7 @@ namespace AddressBook.Models
             _name = name;
             _phone = phone;
             _address = address;
+            _contacts.Add(this);
         }
 
         public string GetName()
