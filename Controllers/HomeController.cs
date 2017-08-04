@@ -5,21 +5,30 @@ using System;
 
 namespace AddressBook.Contollers
 {
-  public class HomeController : Controller
-  {
-
-    [HttpGet("/")]
-    public ActionResult Index()
+    public class HomeController : Controller
     {
-      return View();
-    }
 
-    [HttpGet("/contact/add")]
-    public ActionResult AddContact()
-    {
-      // Task newTask = new Task (Request.Form["new-task"]);
-      // newTask.Save();
-      return View();
+        [HttpGet("/")]
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet("/contact/add")]
+        public ActionResult AddContact()
+        {
+            return View();
+        }
+
+        [HttpPost("/contact/new")]
+        public ActionResult NewContact()
+        {
+            string newName = Request.Form["name"];
+            string newPhone = Request.Form["phone"];
+            string newAddress = Request.Form["address"];
+
+            Contact newContact = new Contact(newName, newPhone, newAddress);
+            return View(newContact);
+        }
     }
-  }
 }
