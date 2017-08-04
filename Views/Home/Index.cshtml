@@ -8,8 +8,8 @@
     <h3>Your Contacts:</h3>
     @foreach (var contact in Model)
     {
-      <h3><a href="/contact/{id}">@contact.GetName()</a></h3>
-      <h5><a href="/contact/{id}/delete/safeguard">Delete @contact.GetName()</a></h5>
+      <h3>@contact.GetID() <a href="/contact/@contact.GetID()">@contact.GetName()</a></h3>
+      <h5><a href="/contact/@contact.GetID()/delete/">Delete @contact.GetName()</a></h5>
     }
   </div>
 

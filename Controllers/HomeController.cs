@@ -39,10 +39,10 @@ namespace AddressBook.Contollers
             return View(newContact);
         }
 
-        [HttpGet("/contact/{id}")]
-        public ActionResult ContactDetails(int id)
+        [HttpGet("/contact/{contactid}")]
+        public ActionResult ContactDetails(int contactid)
         {
-            Contact selectedContact = Contact.Find(id);
+            Contact selectedContact = Contact.Find(contactid);
             return View(selectedContact);
         }
 
@@ -61,7 +61,7 @@ namespace AddressBook.Contollers
         }
 
         [HttpGet("/contact/{id}/delete/safeguard")]
-        public ActionResult ContactSafeGuard(int id)
+        public ActionResult ContactSafeGuard(int id, Contact current)
         {
             return View();
         }
