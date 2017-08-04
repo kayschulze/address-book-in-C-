@@ -6,7 +6,14 @@
   <h1>Address Book</h1>
   <h2>A place to keep your contacts so that you can keep in contact.</h2>
 
-
+  <h3>Your Contacts:</h3>
+  @foreach (var contact in Model)
+  {
+    <h1>I am here.</h1>
+    <h3>@contact.GetName()</h3>
+    <li>Phone Number: @contact.GetPhone()</li>
+    <li>Address: @contact.GetAddress()</li>
+  }
 
   <button><a href="/contact/add">Add Contact</a></button>
   <button><a href="contacts/clear">Clear Contacts</a></button>

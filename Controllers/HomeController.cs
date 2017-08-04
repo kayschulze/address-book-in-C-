@@ -11,7 +11,15 @@ namespace AddressBook.Contollers
         [HttpGet("/")]
         public ActionResult Index()
         {
-            return View();
+            List<Contact> allContacts = Contact.GetAll();
+            return View(allContacts);
+        }
+
+        [HttpPost("/")]
+        public ActionResult IndexContacts()
+        {
+            List<Contact> allContacts = Contact.GetAll();
+            return View("Index", allContacts);
         }
 
         [HttpGet("/contact/add")]
