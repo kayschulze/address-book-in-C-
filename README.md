@@ -16,6 +16,7 @@ _This webpage has a class called Contacts that allows a user to enter a contact'
 | 3. List contacts on homepage | Click homepage | "Kim Schulze", "BB King", "Mary Chapin Carpenter" |
 | 4. Show details of each contact | Click on "Kim Schulze" | Name: Kim Schulze, Phone Number: 503-555-5555, Address: 1234 SW 199th Court |
 | 5. Delete All Contacts | Click on "Clear Address Book" | "Address Book Cleared!" |
+| 6. Delete a single contact | Click on "Kim Schulze" | "This contact has been deleted." |
 
 ## Setup/Installation Requirements
 
