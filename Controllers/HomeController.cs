@@ -45,5 +45,13 @@ namespace AddressBook.Contollers
             Contact selectedContact = Contact.Find(id);
             return View(selectedContact);
         }
+
+        [HttpGet("/contacts/clear")]
+        public ActionResult ClearContacts()
+        {
+            Contact.ClearAll();
+
+            return View();
+        }
     }
 }
