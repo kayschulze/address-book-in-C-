@@ -17,6 +17,7 @@ _This webpage has a class called Contacts that allows a user to enter a contact'
 | 4. Show details of each contact | Click on "Kim Schulze" | Name: Kim Schulze, Phone Number: 503-555-5555, Address: 1234 SW 199th Court |
 | 5. Delete All Contacts | Click on "Clear Address Book" | "Address Book Cleared!" |
 | 6. Delete a single contact | Click on "Kim Schulze" | "This contact has been deleted." |
+| 7. Give user a warning before deleting contact | Click on "Kim Schulze" | "Are you sure you want to delete this contact?" |
 
 ## Setup/Installation Requirements
 
