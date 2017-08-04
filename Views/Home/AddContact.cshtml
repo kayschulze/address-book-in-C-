@@ -3,13 +3,22 @@
 }
 
 <div class="container">
-  <h1>Places You've Been</h1>
-    <h3>@Model.GetLocation()</h3>
-    <p>Year:  @Model.GetYear()</p>
-    <p>Season:  @Model.GetSeason()</p>
-    <p>Favorite Attraction:  @Model.GetFavoriteAttraction()</p>
-    <p>Comments:  @Model.GetComments()</p>
+  <h1>Add New Contact Information</h1>
 
-    <a href="/places/new"><button>Add a New Place</button></a>
-    <a href="/places/all"><button>See All Places</button></a>
+  <form action="/contact/new" method="post">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name">
+      <label for="phone">Phone Number</label>
+      <input type="text" class="form-control" id="phone" name="phone">
+      <label for="address">Address</label>
+      <input type="text" class="form-control" id="address" name="address">
+
+      <button type="submit" name="button">Submit Contact</button>
+    </div>
+  </form>
+
+  <button><a href="/contact/add">Add Contact</a></button>
+  <button><a href="contacts/clear">Clear Contacts</a></button>
+  <button><a href="/">Return to Homepage</a></button>
 </div>
