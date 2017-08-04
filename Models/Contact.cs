@@ -80,5 +80,10 @@ namespace AddressBook.Models
         {
             return _contacts[searchID];
         }
+
+        public static void DeleteContact(Contact thiscontact)
+        {
+            _contacts.RemoveAt(thiscontact._id);
+        }
     }
 }

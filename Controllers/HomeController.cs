@@ -53,5 +53,13 @@ namespace AddressBook.Contollers
 
             return View();
         }
+
+        [HttpGet("/contact/{id}/delete")]
+        public ActionResult ClearOneContact(int id)
+        {
+            Contact selectedContact = Contact.Find(id);
+            Contact.DeleteContact(selectedContact);
+            return View();
+        }
     }
 }
