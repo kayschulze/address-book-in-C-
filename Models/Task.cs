@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 
-namespace ChangeMe.Models
+namespace AddressBook.Models
 {
-  public class Task
+  public class Contact
   {
     private string _description;
     private static List<string> _instances = new List<string> {};
 
-    public Task (string description)
+    public Contact (string description)
     {
       _description = description;
     }

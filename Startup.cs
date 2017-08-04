@@ -22,7 +22,7 @@ namespace AddressBook
 
     public void Configure(IApplicationBuilder app)
     {
-      app.UserDeveloperExceptionPage();
+      app.UseDeveloperExceptionPage();
       app.UseStaticFiles();
       app.UseMvc(routes =>
       {
