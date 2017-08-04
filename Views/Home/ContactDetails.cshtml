@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  <h1>Places You've Been</h1>
+  <ul>
+      <h3>@Model.GetID(). @Model.GetLocation()</h3>
+      <li>Year: @Model.GetYear()</li>
+      <li>Season: @Model.GetSeason()</li>
+      <li>Favorite Attraction: @Model.GetFavoriteAttraction()</li>
+      <li>Comments: @Model.GetComments()</li>
+
+    <a href="/places/new"><button>Add A New Place</button></a>
+    <a href="/places/1"><button>Go to Place #1</button></a>
+</div>

@@ -1,0 +1,19 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  <h1>Places You've Been</h1>
+  <ul>
+    @foreach (var place in Model)
+    {
+      <h3>@place.GetID(). @place.GetLocation()</h3>
+      <li>Year: @place.GetYear()</li>
+      <li>Season: @place.GetSeason()</li>
+      <li>Favorite Attraction: @place.GetFavoriteAttraction()</li>
+      <li>Comments: @place.GetComments()</li>
+    }
+
+    <a href="/places/new"><button>Add A New Place</button></a>
+    <a href="/places/1"><button>Go to Place #1</button></a>
+</div>
