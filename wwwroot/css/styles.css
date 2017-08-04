@@ -1,17 +1,36 @@
 body {
   background-image: url("/img/burntpaper.jpeg");
   background-size: cover;
-  font-family: 'Spirax', cursive;
+  font-size: 20px;
+  font-family: 'Spirax', cursive
 }
 
 h1 {
   font-family: 'Peralta', cursive;
   font-size: 50px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .header {
-  color: gold;
+  color: #c17c0d;
   text-align: center;
-  background-color: blue;
+  background-color: #832187;
   background-size: 50px 50px 50px 50px;
+}
+
+.display {
+  min-height: 300px;
+  background-image: url("/img/lightpaper.jpeg");
+  background-size: cover;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
 }

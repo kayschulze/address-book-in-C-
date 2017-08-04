@@ -4,12 +4,14 @@
 
 <div class="container">
 
-  <h3>Your Contacts:</h3>
-  @foreach (var contact in Model)
-  {
-    <h3><a href="/contact/{id}">@contact.GetName()</a></h3>
-    <h5><a href="/contact/{id}/delete/safeguard">Delete @contact.GetName()</a></h5>
-  }
+  <div class="display">
+    <h3>Your Contacts:</h3>
+    @foreach (var contact in Model)
+    {
+      <h3><a href="/contact/{id}">@contact.GetName()</a></h3>
+      <h5><a href="/contact/{id}/delete/safeguard">Delete @contact.GetName()</a></h5>
+    }
+  </div>
 
   <button><a href="/contact/add">Add Contact</a></button>
   <button><a href="/contacts/clear/safeguardall">Clear Contacts</a></button>

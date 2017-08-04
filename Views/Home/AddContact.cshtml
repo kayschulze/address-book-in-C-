@@ -3,20 +3,22 @@
 }
 
 <div class="container">
-  <h1>Add New Contact Information</h1>
+  <div class="display">
+    <h1>Add New Contact Information</h1>
 
-  <form action="/contact/new" method="post">
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" class="form-control" id="name" name="name">
-      <label for="phone">Phone Number</label>
-      <input type="text" class="form-control" id="phone" name="phone">
-      <label for="address">Address</label>
-      <input type="text" class="form-control" id="address" name="address">
+    <form action="/contact/new" method="post">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name">
+        <label for="phone">Phone Number</label>
+        <input type="text" class="form-control" id="phone" name="phone">
+        <label for="address">Address</label>
+        <input type="text" class="form-control" id="address" name="address">
 
-      <button type="submit" name="button">Submit Contact</button>
-    </div>
-  </form>
+        <button type="submit" name="button">Submit Contact</button>
+      </div>
+    </form>
+  </div>
 
   <button><a href="/contact/add">Add Contact</a></button>
   <button><a href="/contacts/clear/safeguardall">Clear Contacts</a></button>

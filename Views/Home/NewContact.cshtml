@@ -3,12 +3,14 @@
 }
 
 <div class="container">
-  <h1>You Created A Contact!!!</h1>
-  <ul>
-    <h3>Name:  @Model.GetName()</h3>
-    <li>Phone Number:  @Model.GetPhone()</li>
-    <li>Address:  @Model.GetAddress()</li>
-  </ul>
+  <div class="display">
+    <h1>You Created A Contact!!!</h1>
+    <ul>
+      <h3>Name:  @Model.GetName()</h3>
+      <li>Phone Number:  @Model.GetPhone()</li>
+      <li>Address:  @Model.GetAddress()</li>
+    </ul>
+  </div>
 
     <button><a href="/contact/add">Add Contact</a></button>
     <button><a href="contacts/clear/safeguardall">Clear Contacts</a></button>
