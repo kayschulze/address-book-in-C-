@@ -18,6 +18,8 @@ _This webpage has a class called Contacts that allows a user to enter a contact'
 | 5. Delete All Contacts | Click on "Clear Address Book" | "Address Book Cleared!" |
 | 6. Delete a single contact | Click on "Kim Schulze" | "This contact has been deleted." |
 | 7. Give user a warning before deleting contact | Click on "Kim Schulze" | "Are you sure you want to delete this contact?" |
+| 8. Give user a warning before deleting all contacts | Click on "Clear Contacts" | "Are you sure you want to delte all contacts?" |
+| 9. Spruce up CSS to make more professional looking | | |
 
 ## Setup/Installation Requirements
 
