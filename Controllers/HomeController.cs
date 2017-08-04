@@ -54,6 +54,12 @@ namespace AddressBook.Contollers
             return View();
         }
 
+        [HttpGet("/contact/{id}/delete/safeguard")]
+        public ActionResult ContactSafeGuard(int id)
+        {
+            return View();
+        }
+
         [HttpGet("/contact/{id}/delete")]
         public ActionResult ClearOneContact(int id)
         {
