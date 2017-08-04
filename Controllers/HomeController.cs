@@ -11,16 +11,15 @@ namespace AddressBook.Contollers
     [HttpGet("/")]
     public ActionResult Index()
     {
-
       return View();
     }
 
-    // [HttpPost("/contact/new")]
-    // public ActionResult CreateTask()
-    // {
-    //   // Task newTask = new Task (Request.Form["new-task"]);
-    //   // newTask.Save();
-    //   return View(newTask);
-    // }
+    [HttpGet("/contact/add")]
+    public ActionResult AddContact()
+    {
+      // Task newTask = new Task (Request.Form["new-task"]);
+      // newTask.Save();
+      return View();
+    }
   }
 }
