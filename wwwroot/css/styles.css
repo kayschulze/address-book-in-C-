@@ -1,3 +1,17 @@
 body {
-  background-color: skyblue;
+  background-image: url("/img/burntpaper.jpeg");
+  background-size: cover;
+  font-family: 'Spirax', cursive;
+}
+
+h1 {
+  font-family: 'Peralta', cursive;
+  font-size: 50px;
+}
+
+.header {
+  color: gold;
+  text-align: center;
+  background-color: blue;
+  background-size: 50px 50px 50px 50px;
 }
