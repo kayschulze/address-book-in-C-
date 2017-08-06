@@ -6,3 +6,11 @@
 /Users/Guest/Desktop/address-book-in-C-/bin/Debug/netcoreapp1.1/addressbook.pdb
 /Users/Guest/Desktop/address-book-in-C-/obj/Debug/netcoreapp1.1/addressbook.dll
 /Users/Guest/Desktop/address-book-in-C-/obj/Debug/netcoreapp1.1/addressbook.pdb
+C:\Users\kayob\Desktop\Epicodus\address-book-in-C-\bin\Debug\netcoreapp1.1\addressbook.deps.json
+C:\Users\kayob\Desktop\Epicodus\address-book-in-C-\bin\Debug\netcoreapp1.1\addressbook.runtimeconfig.json
+C:\Users\kayob\Desktop\Epicodus\address-book-in-C-\bin\Debug\netcoreapp1.1\addressbook.runtimeconfig.dev.json
+C:\Users\kayob\Desktop\Epicodus\address-book-in-C-\bin\Debug\netcoreapp1.1\addressbook.dll
+C:\Users\kayob\Desktop\Epicodus\address-book-in-C-\bin\Debug\netcoreapp1.1\addressbook.pdb
+C:\Users\kayob\Desktop\Epicodus\address-book-in-C-\obj\Debug\netcoreapp1.1\addressbook.AssemblyInfo.cs
+C:\Users\kayob\Desktop\Epicodus\address-book-in-C-\obj\Debug\netcoreapp1.1\addressbook.dll
+C:\Users\kayob\Desktop\Epicodus\address-book-in-C-\obj\Debug\netcoreapp1.1\addressbook.pdb
