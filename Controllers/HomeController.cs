@@ -3,7 +3,7 @@ using AddressBook.Models;
 using System.Collections.Generic;
 using System;
 
-namespace AddressBook.Contollers
+namespace AddressBook.Controllers
 {
     public class HomeController : Controller
     {
@@ -33,7 +33,12 @@ namespace AddressBook.Contollers
         {
             string newName = Request.Form["name"];
             string newPhone = Request.Form["phone"];
-            string newAddress = Request.Form["address"];
+            string newStreet = Request.Form["street"];
+            string newCity = Request.Form["city"];
+            string newState = Request.Form["state"];
+            string newZip = Request.Form["zip"];
+
+            Address newAddress = new Address(newStreet, newCity, newState, newZip);
 
             Contact newContact = new Contact(newName, newPhone, newAddress);
             return View(newContact);

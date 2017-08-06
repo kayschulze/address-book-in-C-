@@ -35,9 +35,9 @@ namespace AddressBook.Models
             return _city;
         }
 
-        public void SetCity(string newPhone)
+        public void SetCity(string newCity)
         {
-            _phone = newPhone;
+            _city = newCity;
         }
 
         public string GetState()
@@ -55,7 +55,7 @@ namespace AddressBook.Models
             return _zip;
         }
 
-        public void SetZip(int newZip)
+        public void SetZip(string newZip)
         {
             _zip = newZip;
         }

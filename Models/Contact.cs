@@ -6,16 +6,16 @@ namespace AddressBook.Models
     {
         private string _name;
         private string _phone;
-        private string _address;
+        private Address _address;
         private int _id;
 
         private static List<Contact> _contacts = new List<Contact> {};
 
-        public Contact (string name, string phone, string address)
+        public Contact (string name, string phone, Address fulladdress)
         {
             _name = name;
             _phone = phone;
-            _address = address;
+            _address = fulladdress;
             _id = _contacts.Count;
             _contacts.Add(this);
         }
@@ -40,12 +40,12 @@ namespace AddressBook.Models
             _phone = newPhone;
         }
 
-        public string GetAddress()
+        public Address GetAddress()
         {
             return _address;
         }
 
-        public void SetAddress(string newAddress)
+        public void SetAddress(Address newAddress)
         {
             _address = newAddress;
         }
@@ -59,6 +59,11 @@ namespace AddressBook.Models
         {
             _id = newID;
         }
+
+        // public string GetThisStreet()
+        // {
+        //   Address.GetStreet();
+        // }
 
         public static List<Contact> GetAll()
         {
